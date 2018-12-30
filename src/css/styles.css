@@ -8,6 +8,7 @@
  */
 @import url(icofont.min.css);
 @import url(owl.carousel.min.css);
+@import url(owl.theme.default.min.css);
 :root {
   --blue: #007bff;
   --indigo: #6610f2;
