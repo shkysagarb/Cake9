@@ -6965,8 +6965,8 @@ a {
         text-align-last: center !important; } }
   .top-bar .sign-up-part ul {
     text-align: right;
-    padding: 0px;
-    margin: 0px; }
+    padding: 0;
+    margin: 0; }
     .top-bar .sign-up-part ul li {
       list-style-type: none;
       display: inline-block;
@@ -6990,7 +6990,7 @@ header .logo-part .navbar {
     header .logo-part .navbar .form-inline .input-group {
       width: 100%; }
       header .logo-part .navbar .form-inline .input-group .form-control {
-        border-radius: 0rem; }
+        border-radius: 0; }
       header .logo-part .navbar .form-inline .input-group .input-group-text {
         background-color: #fff; }
         header .logo-part .navbar .form-inline .input-group .input-group-text .icofont-ui-search {
@@ -7227,12 +7227,15 @@ header .menu-part {
 
 .section-adv {
   margin-bottom: 50px; }
-  .section-adv img {
-    width: 100%;
-    object-fit: cover;
-    height: 170px; }
+  .section-adv .ad-slot {
+    height: 170px;
+    background: #CCCCCC; }
+    .section-adv .ad-slot img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover; }
     @media (max-width: 575.98px) {
-      .section-adv img {
+      .section-adv .ad-slot {
         margin-bottom: 20px; } }
 
 .section-newsletter {
