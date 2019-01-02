@@ -18,7 +18,8 @@ $red-color: #cd1212;
 $grey-color: #71737a;
 $white-color: #fff;
 $black-color: #000;
-$black-color: #000;
+
+$margin: 80px;
 
 ul {
   list-style-type: none;
@@ -628,3 +629,30 @@ footer {
     }
   }
 }
+
+
+// cake-inner page
+.cake-inner{
+    margin-top: $margin;
+    margin-bottom: $margin;
+    .cake-info{
+        .feature{
+            .feature-detail{
+                padding-left: 0;
+            }
+        }
+    }
+    .photos{
+        ul{
+            li{
+                display: block;
+            }
+        }
+        img{
+            width: 300px;
+            height: 300px;
+        }
+    }
+    
+}
+    
