@@ -128,44 +128,151 @@
             <div class="col-lg-4 col-sm-12">
                 <div class="photos">
                     <!-- Main Image -->
-                    <figure>
-                        <div style="height:403px;width:346px;" class="zoomWrapper"><img src="https://www.cake9.com/asset/uploads/choco%20mocha.jpg" id="zoom" data-zoom-image="https://www.cake9.com/asset/uploads/choco%20mocha.jpg" alt="Choco Mocha" style="position: absolute;"></div>
-                    </figure>
-                    <ul id="album" class="thumbnail">
-                        <li><a href="#" data-image="https://www.cake9.com/asset/uploads/choco%20mocha.jpg" data-zoom-image="https://www.cake9.com/asset/uploads/choco%20mocha.jpg">
-                            <img id="zoom" src="https://www.cake9.com/asset/uploads/choco%20mocha.jpg"  alt="">
-                            </a>
-                        </li>
-                        <li><a href="#" data-image="images/cake-img1.jpg" data-zoom-image="images/cake-img1.jpg">
-                             <img id="zoom" src="images/cake-img1.jpg" alt="">
-                            </a>
-                        </li>
-                   </ul>
-                    <!-- End -->
+                    
+                        <img id="img_01" src="images/cake-img1.jpg" data-zoom-image="images/cake-img1.jpg" width="470px"/>
+                   
+                    <div id="gal1">
+                      <a href="#" data-image="images/cake-img1.jpg" data-zoom-image="images/cake-img1.jpg">
+                        <img id="img_01" src="images/cake-img1.jpg" width="100px"/>
+                      </a>
+                      <a href="#" data-image="images/cake-img2.jpg" data-zoom-image="images/cake-img2.jpg">
+                        <img id="img_01" src="images/cake-img2.jpg" width="100px" />
+                      </a>
+
+                      <a href="#" data-image="images/cake-img6.jpg" data-zoom-image="images/cake-img6.jpg">
+                        <img id="img_01" src="images/cake-img6.jpg" width="100px" />
+                      </a>
+                    </div>
                 </div>
             </div>
             <div class="col-lg-8 col-sm-12">
                 <div class="cake-info">
-                    <h4>Choco Mocha</h4>
-                    <span class="vendor">Cake 9</span>
-                    <h6>Rs. 1200</h6>
-                    <p>The best cake in summer is the Ice Cream Cake. This is the cake that make you feel cool in hot summer. But you must consider its temperature to be stored. It cannot be delivered at long distance since it contains more ice- cream which can melt in hot.</p> 
-                    <h6 class="label">Quantity:</h6>
-                    <input type="number" id="tentacles" name="tentacles" placeholder="2" min="1" max="100">
-                   
+                    <h4 class="cake-head">Choco Mocha</h4>
+                    <span class="vendor">Sold By: Cake 9</span>
+                    <h6 class="price">Rs. 1200</h6>
+                    <p>The best cake in summer is the Ice Cream Cake. This is the cake that make you feel cool in hot summer. But you must consider its temperature to be stored. It cannot be delivered at long distance since it contains more ice- cream which can melt in hot.This is the cake that make you feel cool in hot summer. But you must consider its temperature to be stored. It cannot be delivered at long distance since it contains more ice- cream which can melt in hot.</p> 
+                    <div class="qty">
+                        <h6 class="label">Quantity in Pounds:</h6>
+                        <input type="number" id="tentacles" name="tentacles" placeholder="2" min="1" max="100"/>
+                    </div>
                     <div class="feature">
                         <h6 class="title">Feature</h6>
                         <ul class="feature-detail">
-                            <li>Design Type: <span class="design-type">Animated</span></li>
-                            <li>Flavour: <span class="flavour">Choco mocha</span></li>
-                            <li>Category: <span class="category">Birthday</span></li>
+                            <li>Design Type: <span class="feature-list">Animated</span></li>
+                            <li>Flavour: <span class="feature-list">Choco mocha</span></li>
+                            <li>Category: <span class="feature-list">Birthday</span></li>
                         </ul>
                     </div>
+                    <div class="btns">
+                        <div class="csuppliers">
+                            <button type="submit" id="CartAdd"><i class="fa fa-shopping-cart"></i> Add to Cart
+                            </button>
+                        </div>
+                        <div class="rquotes">
+                            <button type="submit" id="BuyNow"><i class="fa fa-shopping-bag"></i> Buy Now</button>
+                    </div>
+                    </div>
+                </div>
+                <div class="ajax-text">
+                    <h2>Description</h2>
+                    <div class="scroll-text">
+                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+                 </div>
                 </div>
             </div>
         </div>
     </div>
 </section>
+<!-- similar product div starts-->
+<section class="section-owl">
+    <div class="container-fluid">
+        <div class="section-head">
+            <div class="row">
+                <div class="col-12">
+                    <h2 class="section-heading">SIMILAR PRODUCT</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="owl-carousel owl-theme" id="trending-slider-div">
+                 <div class="owl-block">
+                    <a href="cake-inner.html">
+                        <div class="image-block">
+                            <img src="images/cake-img1.jpg" alt=""/>
+                        </div>
+                        <h5>White Forest Cake</h5>
+                        <h6>$690 <strike class="old-price">$780</strike></h6>
+                        <a href="#" class="btn-add btn-block">ADD TO CART</a>
+                    </a>
+                </div>               
+                <div class="owl-block">
+                    <a href="cake-inner.html">
+                        <div class="image-block">
+                            <img src="images/cake-img2.jpg" alt=""/>
+                        </div>
+                        <h5>White Forest Cake</h5>
+                        <h6>$690 <strike class="old-price">$780</strike></h6>
+                        <a href="#" class="btn-add btn-block">ADD TO CART</a>
+                    </a>
+                </div>
+                <div class="owl-block">
+                    <a href="cake-inner.html">
+                        <div class="image-block">
+                            <img src="images/cake-img3.png" alt=""/>
+                        </div>
+                        <h5>White Forest Cake</h5>
+                        <h6>$690 <strike class="old-price">$780</strike></h6>
+                        <a href="#" class="btn-add btn-block">ADD TO CART</a>
+                    </a>
+                </div>
+                <div class="owl-block">
+                    <a href="cake-inner.html">
+                        <div class="image-block">
+                            <img src="images/cake-img4.jpg" alt=""/>
+                        </div>
+                        <h5>White Forest Cake</h5>
+                        <h6>$690 <strike class="old-price">$780</strike></h6>
+                        <a href="#" class="btn-add btn-block">ADD TO CART</a>
+                    </a>
+                </div>
+                <div class="owl-block">
+                    <a href="cake-inner.html">
+                        <div class="image-block">
+                            <img src="images/cake-img5.jpg" alt=""/>
+                        </div>
+                        <h5>White Forest Cake</h5>
+                        <h6>$690 <strike class="old-price">$780</strike></h6>
+                        <a href="#" class="btn-add btn-block">ADD TO CART</a>
+                    </a>
+                </div>
+                <div class="owl-block">
+                    <a href="cake-inner.html">
+                        <div class="image-block">
+                            <img src="images/cake-img6.jpg" alt=""/>
+                        </div>
+                        <h5>White Forest Cake</h5>
+                        <h6>$690 <strike class="old-price">$780</strike></h6>
+                        <a href="#" class="btn-add btn-block">ADD TO CART</a>
+                    </a>
+                </div>
+                <div class="owl-block">
+                    <a href="cake-inner.html">
+                        <div class="image-block">
+                            <img src="images/cake-img3.png" alt=""/>
+                        </div>
+                        <h5>White Forest Cake</h5>
+                        <h6>$690 <strike class="old-price">$780</strike></h6>
+                        <a href="#" class="btn-add btn-block">ADD TO CART</a>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- similar product div ends-->
+
 <!-- section for inner page of cake item ends -->
     
 <!-- footer section    -->
@@ -262,22 +369,18 @@
                 $('header').removeClass('sticky-nav');
             }
         });
-        // Product Zoom Effect
-        $("#zoom").elevateZoom({
-            easing: true,
-            tint: true,
-            tintColour: "#ffffff",
-            gallery: 'album',
-            cursor: 'pointer',
-            zoomWindowFadeIn: 200,
-            zoomWindowFadeOut: 250,
-            galleryActiveClass: 'active',
-        });
 
-        $("#zoom").bind("click", function (e) {
-            var ez = $('#zoom').data('elevateZoom');
-            $.fancybox(ez.getGalleryList());
-            return false;
+       $("#img_01").elevateZoom({
+           gallery:'gal1', 
+           cursor: 'pointer', 
+           galleryActiveClass: 'active', 
+           imageCrossfade: true, 
+           loadingIcon:'http://www.elevateweb.co.uk/spinner.gif'});
+        
+        $("#img_01").bind("click", function(e) {  
+          var ez =   $('#img_01').data('elevateZoom');
+          $.fancybox(ez.getGalleryList());
+          return false;
         });
         
         $('#trending-slider-div').owlCarousel({
@@ -557,8 +660,5 @@
     });
 </script>
 
-    
-<!--<div class="zoomContainer" style="transform: translateZ(0px); position: absolute; left: 504.444px; top: 155.99px; height: 403px; width: 346px;"><div class="zoomLens" style="background-position: 101.872px -585.845px; float: left; border: 5px solid rgb(238, 238, 238); width: 300px; height: 300px; background-repeat: no-repeat; position: absolute; border-radius: 155px; background-image: url(&quot;https://www.cake9.com/asset/uploads/choco%20mocha.jpg&quot;); left: -128px; top: 151px; display: none;">&nbsp;</div><div class="zoomWindowContainer" style="width: 200px;"><div style="z-index: 999; top: 0px; left: 346px;" class="zoomWindow">&nbsp;</div></div></div>-->
-    
 </body>
 </html>

@@ -6939,6 +6939,9 @@ a {
     text-decoration: none;
     color: #000; }
 
+.owl-dots {
+  display: none; }
+
 .section-head {
   border-bottom: 1px solid #f4f4f4;
   margin-bottom: 10px; }
@@ -7064,10 +7067,10 @@ header .menu-part {
 
 .section-owl {
   position: relative;
-  margin-bottom: 10px; }
+  margin-bottom: 50px; }
   .section-owl #trending-slider-div .owl-nav, .section-owl #featured-slider-div .owl-nav, .section-owl #cake-slider-div .owl-nav {
     position: absolute;
-    top: -50px;
+    top: -70px;
     right: 10px;
     background-image: none; }
     .section-owl #trending-slider-div .owl-nav .owl-prev, .section-owl #trending-slider-div .owl-nav .owl-next, .section-owl #featured-slider-div .owl-nav .owl-prev, .section-owl #featured-slider-div .owl-nav .owl-next, .section-owl #cake-slider-div .owl-nav .owl-prev, .section-owl #cake-slider-div .owl-nav .owl-next {
@@ -7136,7 +7139,8 @@ header .menu-part {
         color: #fff; }
 
 .section-tab {
-  position: relative; }
+  position: relative;
+  margin-bottom: 50px; }
   .section-tab .section-head {
     position: absolute;
     top: 25px;
@@ -7325,10 +7329,60 @@ footer {
 .cake-inner {
   margin-top: 80px;
   margin-bottom: 80px; }
-  .cake-inner .cake-info .feature .feature-detail {
-    padding-left: 0; }
-  .cake-inner .photos ul li {
-    display: block; }
-  .cake-inner .photos img {
-    width: 300px;
-    height: 300px; }
+  .cake-inner .cake-info {
+    border: 1px solid #71737a;
+    padding: 10px;
+    margin-bottom: 20px; }
+    .cake-inner .cake-info .cake-head {
+      font-size: 30px;
+      margin-bottom: 0; }
+    .cake-inner .cake-info .vendor {
+      font-size: 12px;
+      color: #298e05;
+      border-bottom: 1px solid #71737a; }
+    .cake-inner .cake-info .price {
+      padding-top: 20px;
+      font-size: 30px; }
+    .cake-inner .cake-info .qty {
+      display: flex; }
+      .cake-inner .cake-info .qty #tentacles {
+        margin-left: 10px;
+        justify-content: flex-end;
+        padding-left: 10px;
+        padding-right: 10px; }
+    .cake-inner .cake-info .feature {
+      padding-top: 20px; }
+      .cake-inner .cake-info .feature .feature-detail {
+        padding-left: 0; }
+        .cake-inner .cake-info .feature .feature-detail .feature-list {
+          color: #000;
+          font-weight: 600; }
+    .cake-inner .cake-info .btns {
+      display: block;
+      margin-bottom: 20px; }
+      .cake-inner .cake-info .btns button {
+        padding: 0 25px;
+        line-height: 42px;
+        color: #fff;
+        font-size: 16px;
+        margin-right: 20px;
+        border-radius: 5px; }
+      .cake-inner .cake-info .btns .csuppliers {
+        display: inline-block; }
+        .cake-inner .cake-info .btns .csuppliers button {
+          background: #298e05; }
+      .cake-inner .cake-info .btns .rquotes {
+        display: inline-block; }
+        .cake-inner .cake-info .btns .rquotes button {
+          background: #111; }
+  .cake-inner .ajax-text {
+    border: 1px solid #71737a;
+    padding: 10px; }
+    .cake-inner .ajax-text .scroll-text {
+      position: relative;
+      overflow-y: scroll;
+      height: 150px; }
+  .cake-inner .photos #img_01 {
+    border: 2px solid white; }
+  .cake-inner .photos .active img {
+    border: 2px solid #333 !important; }
