@@ -9,7 +9,7 @@
 </head>
 
 <body>
-<!--        topbar section starts-->
+<!-- topbar section starts-->
 <div class="top-bar">
     <div class="container-fluid">
         <div class="row">
@@ -24,11 +24,11 @@
                 <div class="sign-up-part ">
                     <ul class="list-item text-right">
                         <li class="list-inline-item">
-                            <a href="#"><i class="icofont-home"></i> Home</a></li>
+                            <a href="index.html"><i class="icofont-home"></i> Home</a></li>
                         <li class="list-inline-item">
-                            <a href="#"><i class="icofont-ssl-security"></i> Sign Up</a></li>
+                            <a href="sign-up.html"><i class="icofont-ssl-security"></i> Sign Up</a></li>
                         <li class="list-inline-item">
-                            <a href="#"><i class="icofont-login"></i> Login</a></li>
+                            <a href="login.html"><i class="icofont-login"></i> Login</a></li>
                     </ul>
                 </div>
             </div>
@@ -37,14 +37,14 @@
 </div>
 <!--        topbar section ends-->
 
-<!--        header starts-->
+<!-- header starts-->
 <header>
     <!--   logo part starts-->
     <div class="logo-part">
         <div class="container-fluid">
             <div class="row">
                 <div class="col-lg-3 col-sm-12 text-sm-center">
-                    <a href="#" class="navbar-brand"><img src="images/logo.png" alt=""/></a>
+                    <a href="index.html" class="navbar-brand"><img src="images/logo.png" alt=""/></a>
                 </div>
                 <div class="col-lg-7 col-sm-12">
                     <nav class="navbar navbar-light ">
@@ -85,14 +85,8 @@
                         </div>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button"
+                        <a class="nav-link" href="index.html" role="button"
                            aria-haspopup="true" aria-expanded="false">HOME</a>
-                        <div class="dropdown-menu">
-                            <a class="dropdown-item" href="#">Action</a>
-                            <a class="dropdown-item" href="#">Another action</a>
-                            <a class="dropdown-item" href="#">Something else here</a>
-                            <a class="dropdown-item" href="#">Separated link</a>
-                        </div>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button"
@@ -105,13 +99,10 @@
                         </div>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">SALE</a>
+                        <a class="nav-link" href="about.html">ABOUT US</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">ABOUT US</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">CONTACT US</a>
+                        <a class="nav-link" href="contact-us.html">CONTACT US</a>
                     </li>
                 </ul>
             </div>
@@ -119,7 +110,7 @@
     </div>
     <!--   menu div ends-->
 </header>
-<!--        header ends-->
+<!-- header ends-->
 
 <!--  slider div starts-->
 <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
@@ -170,7 +161,6 @@
     <div class="container-fluid">
         <div class="row">
             <div class="owl-carousel owl-theme" id="trending-slider-div">
-                
                 <div class="owl-block">
                     <a href="cake-inner.html">
                         <div class="image-block">
@@ -178,7 +168,7 @@
                         </div>
                         <h5>White Forest Cake</h5>
                         <h6>$690 <strike class="old-price">$780</strike></h6>
-                        <a href="#" class="btn-add btn-block">ADD TO CART</a>
+                        <a href="add-to-cart.html" class="btn-add btn-block">ADD TO CART</a>
                     </a>
                 </div>               
                 <div class="owl-block">
@@ -1553,7 +1543,7 @@
     </div>
 </section>
 <!--  newsletter section ends   -->
-
+   
 <!-- footer section    -->
 <footer>
     <div class="container-fluid">
@@ -1576,7 +1566,7 @@
             <div class="col-lg-3 col-sm-12">
                 <h3>MY ACCOUNT</h3>
                 <ul class="account">
-                    <li><a href="#">About Us</a></li>
+                    <li><a href="about.html">About Us</a></li>
                     <li><a href="#">Delivery Information</a></li>
                     <li><a href="#">Privacy Policye</a></li>
                     <li><a href="#">Discount</a></li>
@@ -1590,7 +1580,7 @@
                     <li><a href="#">Custom Service</a></li>
                     <li><a href="#">F.A.Q.'s</a></li>
                     <li><a href="#">Order Tracking</a></li>
-                    <li><a href="#">Contacts</a></li>
+                    <li><a href="contact-us.html">Contacts</a></li>
                     <li><a href="#">Events</a></li>
                     <li><a href="#">Popular</a></li>
                 </ul>
@@ -1603,7 +1593,7 @@
                     <li><a href="#">Your Account</a></li>
                     <li><a href="#">Privacy Policy</a></li>
                     <li><a href="#">Terms & Condition</a></li>
-                    <li><a href="#">Conatct Us</a></li>
+                    <li><a href="contact-us.html">Conatct Us</a></li>
                 </ul>
             </div>
         </div>
@@ -1634,6 +1624,7 @@
 <script src="js/popper.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
 <script src="js/owl.carousel.min.js"></script>
+<script src="js/jquery.elevateZoom-3.0.8.min.js"></script>
 <script>
     $(document).ready(function () {
         var mainbottom = $('header').offset().top;
@@ -1645,6 +1636,47 @@
                 $('header').addClass('sticky-nav');
             } else {
                 $('header').removeClass('sticky-nav');
+            }
+        });
+
+       $("#img_01").elevateZoom({
+           gallery:'gal1', 
+           cursor: 'pointer', 
+           galleryActiveClass: 'active', 
+           imageCrossfade: true, 
+           loadingIcon:'http://www.elevateweb.co.uk/spinner.gif'});
+        
+        $("#img_01").bind("click", function(e) {  
+          var ez =   $('#img_01').data('elevateZoom');
+          $.fancybox(ez.getGalleryList());
+          return false;
+        });
+        $('#similar-slider-div').owlCarousel({
+            items: 6,
+            loop: false,
+            lazyLoader: true,
+            responsiveClass: true,
+            responsive: {
+                0: {
+                    items: 1,
+                    nav: true
+                },
+                600: {
+                    items: 2,
+                    nav: false
+                },
+                1000: {
+                    items: 5,
+                    nav: true,
+                    loop: false,
+                    mouseDrag: false,
+                },
+                1200: {
+                    items: 6,
+                    nav: true,
+                    mouseDrag: false,
+//                  loop: false
+                }
             }
         });
         $('#trending-slider-div').owlCarousel({

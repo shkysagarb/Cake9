@@ -6939,6 +6939,10 @@ a {
     text-decoration: none;
     color: #000; }
 
+.btn {
+  color: #fff;
+  background-color: #298e05; }
+
 .owl-dots {
   display: none; }
 
@@ -7002,6 +7006,9 @@ header .logo-part .navbar {
 
 header .cart-item {
   padding-top: 20px; }
+  @media (max-width: 767.98px) {
+    header .cart-item {
+      padding-bottom: 10px; } }
   header .cart-item a {
     display: inline-block;
     border: 2px solid #f4f4f4;
@@ -7068,52 +7075,52 @@ header .menu-part {
 .section-owl {
   position: relative;
   margin-bottom: 50px; }
-  .section-owl #trending-slider-div .owl-nav, .section-owl #featured-slider-div .owl-nav, .section-owl #cake-slider-div .owl-nav {
+  .section-owl #trending-slider-div .owl-nav, .section-owl #featured-slider-div .owl-nav, .section-owl #cake-slider-div .owl-nav, .section-owl #similar-slider-div .owl-nav {
     position: absolute;
     top: -70px;
     right: 10px;
     background-image: none; }
-    .section-owl #trending-slider-div .owl-nav .owl-prev, .section-owl #trending-slider-div .owl-nav .owl-next, .section-owl #featured-slider-div .owl-nav .owl-prev, .section-owl #featured-slider-div .owl-nav .owl-next, .section-owl #cake-slider-div .owl-nav .owl-prev, .section-owl #cake-slider-div .owl-nav .owl-next {
+    .section-owl #trending-slider-div .owl-nav .owl-prev, .section-owl #trending-slider-div .owl-nav .owl-next, .section-owl #featured-slider-div .owl-nav .owl-prev, .section-owl #featured-slider-div .owl-nav .owl-next, .section-owl #cake-slider-div .owl-nav .owl-prev, .section-owl #cake-slider-div .owl-nav .owl-next, .section-owl #similar-slider-div .owl-nav .owl-prev, .section-owl #similar-slider-div .owl-nav .owl-next {
       margin-right: 5px;
       font-size: 24px;
       background-color: #f4f4f4;
       color: #000; }
-      .section-owl #trending-slider-div .owl-nav .owl-prev span, .section-owl #trending-slider-div .owl-nav .owl-next span, .section-owl #featured-slider-div .owl-nav .owl-prev span, .section-owl #featured-slider-div .owl-nav .owl-next span, .section-owl #cake-slider-div .owl-nav .owl-prev span, .section-owl #cake-slider-div .owl-nav .owl-next span {
+      .section-owl #trending-slider-div .owl-nav .owl-prev span, .section-owl #trending-slider-div .owl-nav .owl-next span, .section-owl #featured-slider-div .owl-nav .owl-prev span, .section-owl #featured-slider-div .owl-nav .owl-next span, .section-owl #cake-slider-div .owl-nav .owl-prev span, .section-owl #cake-slider-div .owl-nav .owl-next span, .section-owl #similar-slider-div .owl-nav .owl-prev span, .section-owl #similar-slider-div .owl-nav .owl-next span {
         padding-left: 10px;
         padding-right: 10px; }
-      .section-owl #trending-slider-div .owl-nav .owl-prev:hover, .section-owl #trending-slider-div .owl-nav .owl-next:hover, .section-owl #featured-slider-div .owl-nav .owl-prev:hover, .section-owl #featured-slider-div .owl-nav .owl-next:hover, .section-owl #cake-slider-div .owl-nav .owl-prev:hover, .section-owl #cake-slider-div .owl-nav .owl-next:hover {
+      .section-owl #trending-slider-div .owl-nav .owl-prev:hover, .section-owl #trending-slider-div .owl-nav .owl-next:hover, .section-owl #featured-slider-div .owl-nav .owl-prev:hover, .section-owl #featured-slider-div .owl-nav .owl-next:hover, .section-owl #cake-slider-div .owl-nav .owl-prev:hover, .section-owl #cake-slider-div .owl-nav .owl-next:hover, .section-owl #similar-slider-div .owl-nav .owl-prev:hover, .section-owl #similar-slider-div .owl-nav .owl-next:hover {
         background-color: #298e05;
         color: #fff; }
-  .section-owl #trending-slider-div .owl-item .owl-block, .section-owl #featured-slider-div .owl-item .owl-block, .section-owl #cake-slider-div .owl-item .owl-block {
+  .section-owl #trending-slider-div .owl-item .owl-block, .section-owl #featured-slider-div .owl-item .owl-block, .section-owl #cake-slider-div .owl-item .owl-block, .section-owl #similar-slider-div .owl-item .owl-block {
     padding: 10px;
     border: 1px solid transparent;
     position: relative; }
-    .section-owl #trending-slider-div .owl-item .owl-block .image-block, .section-owl #featured-slider-div .owl-item .owl-block .image-block, .section-owl #cake-slider-div .owl-item .owl-block .image-block {
+    .section-owl #trending-slider-div .owl-item .owl-block .image-block, .section-owl #featured-slider-div .owl-item .owl-block .image-block, .section-owl #cake-slider-div .owl-item .owl-block .image-block, .section-owl #similar-slider-div .owl-item .owl-block .image-block {
       height: 215px;
       border: 1px solid #f8f8f8;
       overflow: hidden; }
-      .section-owl #trending-slider-div .owl-item .owl-block .image-block img, .section-owl #featured-slider-div .owl-item .owl-block .image-block img, .section-owl #cake-slider-div .owl-item .owl-block .image-block img {
+      .section-owl #trending-slider-div .owl-item .owl-block .image-block img, .section-owl #featured-slider-div .owl-item .owl-block .image-block img, .section-owl #cake-slider-div .owl-item .owl-block .image-block img, .section-owl #similar-slider-div .owl-item .owl-block .image-block img {
         transition: .2s;
         width: 100%;
         height: 100%;
         object-fit: cover;
         transform: scale(1); }
-        .section-owl #trending-slider-div .owl-item .owl-block .image-block img:hover, .section-owl #featured-slider-div .owl-item .owl-block .image-block img:hover, .section-owl #cake-slider-div .owl-item .owl-block .image-block img:hover {
+        .section-owl #trending-slider-div .owl-item .owl-block .image-block img:hover, .section-owl #featured-slider-div .owl-item .owl-block .image-block img:hover, .section-owl #cake-slider-div .owl-item .owl-block .image-block img:hover, .section-owl #similar-slider-div .owl-item .owl-block .image-block img:hover {
           transform: scale(1.5); }
-    .section-owl #trending-slider-div .owl-item .owl-block h5, .section-owl #featured-slider-div .owl-item .owl-block h5, .section-owl #cake-slider-div .owl-item .owl-block h5 {
+    .section-owl #trending-slider-div .owl-item .owl-block h5, .section-owl #featured-slider-div .owl-item .owl-block h5, .section-owl #cake-slider-div .owl-item .owl-block h5, .section-owl #similar-slider-div .owl-item .owl-block h5 {
       font-family: "Lato", sans-serif;
       font-size: 15px;
       color: #71737a;
       padding-top: 15px;
       padding-bottom: 5px; }
-    .section-owl #trending-slider-div .owl-item .owl-block h6, .section-owl #featured-slider-div .owl-item .owl-block h6, .section-owl #cake-slider-div .owl-item .owl-block h6 {
+    .section-owl #trending-slider-div .owl-item .owl-block h6, .section-owl #featured-slider-div .owl-item .owl-block h6, .section-owl #cake-slider-div .owl-item .owl-block h6, .section-owl #similar-slider-div .owl-item .owl-block h6 {
       padding-bottom: 10px;
       font-family: "Poppins", sans-serif;
       font-size: 20px;
       font-weight: 600; }
-      .section-owl #trending-slider-div .owl-item .owl-block h6 .old-price, .section-owl #featured-slider-div .owl-item .owl-block h6 .old-price, .section-owl #cake-slider-div .owl-item .owl-block h6 .old-price {
+      .section-owl #trending-slider-div .owl-item .owl-block h6 .old-price, .section-owl #featured-slider-div .owl-item .owl-block h6 .old-price, .section-owl #cake-slider-div .owl-item .owl-block h6 .old-price, .section-owl #similar-slider-div .owl-item .owl-block h6 .old-price {
         display: none; }
-    .section-owl #trending-slider-div .owl-item .owl-block .btn-add, .section-owl #featured-slider-div .owl-item .owl-block .btn-add, .section-owl #cake-slider-div .owl-item .owl-block .btn-add {
+    .section-owl #trending-slider-div .owl-item .owl-block .btn-add, .section-owl #featured-slider-div .owl-item .owl-block .btn-add, .section-owl #cake-slider-div .owl-item .owl-block .btn-add, .section-owl #similar-slider-div .owl-item .owl-block .btn-add {
       font-size: 12px;
       font-family: "Poppins", sans-serif;
       font-weight: 600;
@@ -7124,17 +7131,17 @@ header .menu-part {
       padding-top: 10px;
       border-radius: 2px;
       text-align: center; }
-    .section-owl #trending-slider-div .owl-item .owl-block:hover, .section-owl #featured-slider-div .owl-item .owl-block:hover, .section-owl #cake-slider-div .owl-item .owl-block:hover {
+    .section-owl #trending-slider-div .owl-item .owl-block:hover, .section-owl #featured-slider-div .owl-item .owl-block:hover, .section-owl #cake-slider-div .owl-item .owl-block:hover, .section-owl #similar-slider-div .owl-item .owl-block:hover {
       border: 1px solid #298e05;
       color: #cd1212; }
-      .section-owl #trending-slider-div .owl-item .owl-block:hover h5, .section-owl #featured-slider-div .owl-item .owl-block:hover h5, .section-owl #cake-slider-div .owl-item .owl-block:hover h5 {
+      .section-owl #trending-slider-div .owl-item .owl-block:hover h5, .section-owl #featured-slider-div .owl-item .owl-block:hover h5, .section-owl #cake-slider-div .owl-item .owl-block:hover h5, .section-owl #similar-slider-div .owl-item .owl-block:hover h5 {
         color: #cd1212; }
-      .section-owl #trending-slider-div .owl-item .owl-block:hover .old-price, .section-owl #featured-slider-div .owl-item .owl-block:hover .old-price, .section-owl #cake-slider-div .owl-item .owl-block:hover .old-price {
+      .section-owl #trending-slider-div .owl-item .owl-block:hover .old-price, .section-owl #featured-slider-div .owl-item .owl-block:hover .old-price, .section-owl #cake-slider-div .owl-item .owl-block:hover .old-price, .section-owl #similar-slider-div .owl-item .owl-block:hover .old-price {
         display: contents;
         font-size: 16px;
         font-weight: 400;
         color: #000; }
-      .section-owl #trending-slider-div .owl-item .owl-block:hover .btn-add, .section-owl #featured-slider-div .owl-item .owl-block:hover .btn-add, .section-owl #cake-slider-div .owl-item .owl-block:hover .btn-add {
+      .section-owl #trending-slider-div .owl-item .owl-block:hover .btn-add, .section-owl #featured-slider-div .owl-item .owl-block:hover .btn-add, .section-owl #cake-slider-div .owl-item .owl-block:hover .btn-add, .section-owl #similar-slider-div .owl-item .owl-block:hover .btn-add {
         background-color: #298e05;
         color: #fff; }
 
@@ -7343,15 +7350,8 @@ footer {
     .cake-inner .cake-info .price {
       padding-top: 20px;
       font-size: 30px; }
-    .cake-inner .cake-info .qty {
-      display: flex; }
-      .cake-inner .cake-info .qty #tentacles {
-        margin-left: 10px;
-        justify-content: flex-end;
-        padding-left: 10px;
-        padding-right: 10px; }
     .cake-inner .cake-info .feature {
-      padding-top: 20px; }
+      padding-top: 10px; }
       .cake-inner .cake-info .feature .feature-detail {
         padding-left: 0; }
         .cake-inner .cake-info .feature .feature-detail .feature-list {
@@ -7386,3 +7386,95 @@ footer {
     border: 2px solid white; }
   .cake-inner .photos .active img {
     border: 2px solid #333 !important; }
+
+@media (min-width: 768px) {
+  #similar-slider-div .owl-nav {
+    display: none; } }
+
+.section-aboutus {
+  margin-top: 80px;
+  margin-bottom: 80px; }
+
+.contact-page {
+  margin-bottom: 50px; }
+  .contact-page .btn {
+    color: #fff;
+    background-color: #298e05; }
+  .contact-page .addressDetail ul {
+    padding-left: 0; }
+
+.section-signUp {
+  margin-top: 80px;
+  margin-bottom: 80px; }
+  .section-signUp .register-form {
+    padding: 20px;
+    background-color: #f4f4f4; }
+    .section-signUp .register-form .signUp-heading {
+      align-text: center;
+      padding-bottom: 20px; }
+
+.section-login {
+  margin-top: 80px;
+  margin-bottom: 80px; }
+  .section-login .login-form {
+    width: 50%;
+    padding: 20px;
+    background-color: #f4f4f4; }
+    @media (max-width: 767.98px) {
+      .section-login .login-form {
+        width: 100%; } }
+    .section-login .login-form form .form-group {
+      width: 100%; }
+
+.section-cart {
+  margin-top: 80px;
+  margin-bottom: 80px; }
+  .section-cart .table > tbody > tr > td, .section-cart .table > tfoot > tr > td {
+    vertical-align: middle; }
+    @media (max-width: 767.98px) {
+      .section-cart .table > tbody > tr > td h2, .section-cart .table > tbody > tr > td h4, .section-cart .table > tfoot > tr > td h2, .section-cart .table > tfoot > tr > td h4 {
+        font-size: 10px; }
+      .section-cart .table > tbody > tr > td p, .section-cart .table > tfoot > tr > td p {
+        font-size: 10px; }
+      .section-cart .table > tbody > tr > td img, .section-cart .table > tfoot > tr > td img {
+        width: 50px;
+        height: 50px;
+        object-fit: cover; }
+      .section-cart .table > tbody > tr > td td, .section-cart .table > tfoot > tr > td td {
+        width: 3px; }
+      .section-cart .table > tbody > tr > td .table, .section-cart .table > tbody > tr > td th, .section-cart .table > tbody > tr > td td, .section-cart .table > tbody > tr > td tr, .section-cart .table > tbody > tr > td tfoot, .section-cart .table > tfoot > tr > td .table, .section-cart .table > tfoot > tr > td th, .section-cart .table > tfoot > tr > td td, .section-cart .table > tfoot > tr > td tr, .section-cart .table > tfoot > tr > td tfoot {
+        padding: 0.2rem;
+        min-width: 250px; }
+      .section-cart .table > tbody > tr > td .btn, .section-cart .table > tfoot > tr > td .btn {
+        padding: 0.1rem 0.4rem;
+        font-size: 0.6rem; } }
+    .section-cart .table > tbody > tr > td .btn-warning, .section-cart .table > tfoot > tr > td .btn-warning {
+      border-color: transparent; }
+      .section-cart .table > tbody > tr > td .btn-warning:hover, .section-cart .table > tfoot > tr > td .btn-warning:hover {
+        background-color: #71737a;
+        color: #000; }
+    @media screen and (max-width: 600px) {
+      .section-cart .table > tbody > tr > td table#cart tbody td .form-control, .section-cart .table > tfoot > tr > td table#cart tbody td .form-control {
+        width: 20%;
+        display: inline !important; }
+      .section-cart .table > tbody > tr > td .actions .btn, .section-cart .table > tfoot > tr > td .actions .btn {
+        width: 36%;
+        margin: 1.5em 0; }
+      .section-cart .table > tbody > tr > td .actions .btn-info, .section-cart .table > tfoot > tr > td .actions .btn-info {
+        float: left; }
+      .section-cart .table > tbody > tr > td .actions .btn-danger, .section-cart .table > tfoot > tr > td .actions .btn-danger {
+        float: right; }
+      .section-cart .table > tbody > tr > td table#cart thead, .section-cart .table > tfoot > tr > td table#cart thead {
+        display: none; }
+      .section-cart .table > tbody > tr > td table#cart tbody td, .section-cart .table > tfoot > tr > td table#cart tbody td {
+        display: block;
+        padding: .6rem;
+        min-width: 320px; }
+      .section-cart .table > tbody > tr > td table#cart tbody tr td:first-child, .section-cart .table > tfoot > tr > td table#cart tbody tr td:first-child {
+        background: #333;
+        color: #fff; }
+      .section-cart .table > tbody > tr > td table#cart tbody td:before, .section-cart .table > tfoot > tr > td table#cart tbody td:before {
+        content: attr(data-th);
+        font-weight: bold;
+        display: inline-block;
+        width: 8rem; } }

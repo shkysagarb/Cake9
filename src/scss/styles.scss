@@ -11,14 +11,12 @@ bg-transparent {
 
 $font-family-poppins: 'Poppins', sans-serif;
 $font-family-lato: 'Lato', sans-serif;
-
 $top-menu-color: #f4f4f4;
 $logo-green-color: #298e05;
 $red-color: #cd1212;
 $grey-color: #71737a;
 $white-color: #fff;
 $black-color: #000;
-
 $margin: 80px;
 
 ul {
@@ -34,7 +32,10 @@ a {
     color: $black-color;
   }
 }
-
+.btn{
+    color: $white-color; 
+    background-color: $logo-green-color; 
+}
 .owl-dots{
           display: none;
       }
@@ -128,8 +129,11 @@ header {
   }
 
   .cart-item {
+    @include media-breakpoint-down(sm){
+          padding-bottom: 10px;
+    }
     padding-top: 20px;
-
+      
     a {
       //padding: 10px;
       display: inline-block;
@@ -231,7 +235,7 @@ header {
   position: relative;
   margin-bottom: 50px;
 
-  #trending-slider-div, #featured-slider-div, #cake-slider-div {
+  #trending-slider-div, #featured-slider-div, #cake-slider-div, #similar-slider-div {
       
     .owl-nav {
       position: absolute;
@@ -634,7 +638,6 @@ footer {
   }
 }
 
-
 // cake-inner page
 .cake-inner{
     margin-top: $margin;
@@ -657,17 +660,8 @@ footer {
             padding-top: 20px;
             font-size: 30px;
         }
-        .qty{
-            display: flex;
-            #tentacles{
-                margin-left: 10px;
-                justify-content: flex-end;
-                padding-left: 10px;
-                padding-right: 10px;
-            }
-        }
         .feature{
-            padding-top: 20px;
+            padding-top: 10px;
             .feature-detail{
                 padding-left: 0;
                 .feature-list{
@@ -721,4 +715,145 @@ footer {
     }
     
 }
+#similar-slider-div{
+    @include media-breakpoint-up(md){
+        .owl-nav {
+            display: none;
+        }
+    }
     
+}
+
+//about us page
+.section-aboutus{
+    margin-top: $margin;
+    margin-bottom: $margin;
+}
+
+//contact us page
+.contact-page {
+  margin-bottom: 50px;
+    .btn{
+        color: $white-color; 
+        background-color: $logo-green-color; 
+    }
+    .addressDetail{
+        ul{
+            padding-left: 0;
+        }
+    }
+}
+
+//sign up 
+.section-signUp{
+    
+    margin-top: $margin;
+    margin-bottom: $margin;
+    .register-form{
+        .signUp-heading{
+            align-text: center;
+            padding-bottom: 20px;
+        }
+        padding: 20px;
+        background-color: $top-menu-color;
+    }
+}
+
+//login 
+.section-login{
+    margin-top: $margin;
+    margin-bottom: $margin;
+    .login-form{
+        @include media-breakpoint-down(sm){
+            width: 100%;
+        }
+        width: 50%;
+        padding: 20px;
+        background-color: $top-menu-color;
+        form{
+            .form-group{
+                width: 100%;
+            }
+        }   
+    }
+}
+
+// add to cart
+.section-cart{
+    margin-top: $margin;
+    margin-bottom: $margin;
+    .table>tbody>tr>td, .table>tfoot>tr>td{
+        @include media-breakpoint-down(sm){
+
+            h2,h4{
+                font-size: 10px;
+            }
+            p{
+                font-size: 10px;
+            }
+            img{
+                width: 50px;
+                height:50px;
+                object-fit: cover;
+            }
+            td{
+               width: 3px; 
+            }
+            .table,th,td,tr,tfoot{
+                padding: 0.2rem;
+                min-width: 250px;
+            }
+            .btn{
+                padding: 0.1rem 0.4rem;
+                font-size: 0.6rem;
+            }
+        }
+        vertical-align: middle;
+        .btn-warning{
+                border-color: transparent;
+                &:hover{
+                    background-color: $grey-color;
+                    color: $black-color;
+                }
+        }
+        @media screen and (max-width: 600px) {
+            table#cart tbody td .form-control{
+                width:20%;
+                display: inline !important;
+            }
+            .actions .btn{
+                width:36%;
+                margin:1.5em 0;
+            }
+
+            .actions .btn-info{
+                float:left;
+            }
+            .actions .btn-danger{
+                float:right;
+            }
+            
+            table#cart thead{ 
+                display: none; 
+            }
+            table#cart tbody td {
+                display: block; 
+                padding: .6rem; 
+                min-width:320px;
+            }
+            table#cart tbody tr td:first-child { 
+                background: #333; 
+                color: #fff; 
+            }
+            table#cart tbody td:before {
+                content: attr(data-th); 
+                font-weight: bold;
+                display: inline-block; 
+                width: 8rem;
+            }
+        }
+    }
+}
+
+
+	
