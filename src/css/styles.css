@@ -7033,7 +7033,8 @@ header .menu-part {
       header .menu-part .navbar .categories:hover {
         color: #fff; }
     header .menu-part .navbar .navbar-toggler {
-      background-color: #fff; }
+      background-color: #fff;
+      margin-left: 130px; }
       header .menu-part .navbar .navbar-toggler .navbar-toggler-icon {
         color: #fff; }
       header .menu-part .navbar .navbar-toggler:focus {
@@ -7374,23 +7375,19 @@ footer {
           color: #000;
           font-weight: 600; }
     .cake-inner .cake-info .btns {
-      display: block;
       margin-bottom: 20px; }
-      .cake-inner .cake-info .btns button {
-        padding: 0 25px;
-        line-height: 42px;
-        color: #fff;
-        font-size: 16px;
-        margin-right: 20px;
-        border-radius: 5px; }
       .cake-inner .cake-info .btns .csuppliers {
         display: inline-block; }
-        .cake-inner .cake-info .btns .csuppliers button {
-          background: #298e05; }
       .cake-inner .cake-info .btns .rquotes {
-        display: inline-block; }
-        .cake-inner .cake-info .btns .rquotes button {
-          background: #111; }
+        display: inline-block;
+        font-size: 16px; }
+        .cake-inner .cake-info .btns .rquotes .buy-now {
+          color: #fff;
+          padding-left: 25px;
+          padding-right: 25px;
+          padding-bottom: 15px;
+          padding-top: 10px;
+          border-radius: 5px; }
   .cake-inner .ajax-text {
     border: 1px solid #71737a;
     padding: 10px; }

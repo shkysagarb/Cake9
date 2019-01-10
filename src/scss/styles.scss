@@ -138,7 +138,6 @@ header {
     padding-top: 20px;
 
     a {
-      //padding: 10px;
       display: inline-block;
       border: 2px solid $top-menu-color;
       border-radius: 50%;
@@ -168,17 +167,17 @@ header {
                 }
             }
           .navbar-toggler{
-//              color: #fff;
               background-color: #fff;
+              margin-left: 130px;
               .navbar-toggler-icon{
                   color: #fff;
               }
               &:focus{
                 outline: transparent;
-                  display: block;
+                display: block;
               }
           }
-          
+           
     .nav-pills {  
       .nav-link {
         background-color: transparent;
@@ -372,7 +371,6 @@ header {
 .section-tab {
   position: relative;
   margin-bottom: 50px;
-
   .section-head {
     position: absolute;
     top: 25px;
@@ -380,8 +378,6 @@ header {
   }
 
   .tab-menu {
-    
-
     position: absolute;
     right: 140px;
     margin-bottom: 40px;
@@ -707,31 +703,20 @@ footer {
     }
 
     .btns {
-      display: block;
       margin-bottom: 20px;
-
-      button {
-        padding: 0 25px;
-        line-height: 42px;
-        color: #fff;
-        font-size: 16px;
-        margin-right: 20px;
-        border-radius: 5px;
-      }
-
       .csuppliers {
         display: inline-block;
-
-        button {
-          background: $logo-green-color;
-        }
       }
-
       .rquotes {
         display: inline-block;
-
-        button {
-          background: #111;
+        font-size: 16px;
+        .buy-now{
+            color: $white-color;
+            padding-left: 25px;
+            padding-right: 25px;
+            padding-bottom: 15px;
+            padding-top: 10px;
+            border-radius: 5px;
         }
       }
     }
