@@ -153,15 +153,36 @@ header {
 
   .menu-part {
     background-color: $black-color;
-
-    .nav-pills {
+      .navbar{
+          padding:0;
+            .categories{
+                padding-top: 15px;
+                padding-bottom: 15px;
+                background-color: $logo-green-color;
+                color: $white-color;
+                &:hover{
+                   color: $white-color; 
+                }
+            }
+          .navbar-toggler{
+//              color: #fff;
+              background-color: #fff;
+              .navbar-toggler-icon{
+                  color: #fff;
+              }
+              &:focus{
+                outline: transparent;
+                  display: block;
+              }
+          }
+          
+    .nav-pills {  
       .nav-link {
         background-color: transparent;
 
         &:active {
           background-color: transparent;
         }
-
         .disabled {
           color: $white-color;
         }
@@ -170,18 +191,19 @@ header {
       .show {
         background-color: transparent;
       }
-
-      .categories {
-        background-color: $logo-green-color;
+      .dropdown-toggle{
+          color: $white-color;
       }
-
       a {
         padding-top: 15px;
         padding-bottom: 15px;
         color: $white-color;
       }
     }
-  }
+  
+      }
+    
+    }
 }
 
 .slide {
@@ -354,6 +376,8 @@ header {
   }
 
   .tab-menu {
+    
+
     position: absolute;
     right: 140px;
     margin-bottom: 40px;

@@ -7023,20 +7023,36 @@ header .cart-item {
 
 header .menu-part {
   background-color: #000; }
-  header .menu-part .nav-pills .nav-link {
-    background-color: transparent; }
-    header .menu-part .nav-pills .nav-link:active {
-      background-color: transparent; }
-    header .menu-part .nav-pills .nav-link .disabled {
+  header .menu-part .navbar {
+    padding: 0; }
+    header .menu-part .navbar .categories {
+      padding-top: 15px;
+      padding-bottom: 15px;
+      background-color: #298e05;
       color: #fff; }
-  header .menu-part .nav-pills .show {
-    background-color: transparent; }
-  header .menu-part .nav-pills .categories {
-    background-color: #298e05; }
-  header .menu-part .nav-pills a {
-    padding-top: 15px;
-    padding-bottom: 15px;
-    color: #fff; }
+      header .menu-part .navbar .categories:hover {
+        color: #fff; }
+    header .menu-part .navbar .navbar-toggler {
+      background-color: #fff; }
+      header .menu-part .navbar .navbar-toggler .navbar-toggler-icon {
+        color: #fff; }
+      header .menu-part .navbar .navbar-toggler:focus {
+        outline: transparent;
+        display: block; }
+    header .menu-part .navbar .nav-pills .nav-link {
+      background-color: transparent; }
+      header .menu-part .navbar .nav-pills .nav-link:active {
+        background-color: transparent; }
+      header .menu-part .navbar .nav-pills .nav-link .disabled {
+        color: #fff; }
+    header .menu-part .navbar .nav-pills .show {
+      background-color: transparent; }
+    header .menu-part .navbar .nav-pills .dropdown-toggle {
+      color: #fff; }
+    header .menu-part .navbar .nav-pills a {
+      padding-top: 15px;
+      padding-bottom: 15px;
+      color: #fff; }
 
 .slide {
   margin-bottom: 50px;

@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" href="images/logo.png" sizes="16x16" type="image/png">
 </head>
 
 <body>
@@ -73,43 +74,41 @@
     <div class="menu-part">
         <div class="container-fluid">
             <div class="row">
-                <ul class="nav nav-pills">
-                    <li class="nav-item dropdown categories">
-                        <a class="nav-link dropdown-toggle " data-toggle="dropdown" href="#" role="button"
-                           aria-haspopup="true" aria-expanded="false"><i class="icofont-ui-folder"></i> CAETEGORIES</a>
+                <nav class="navbar navbar-expand-lg nav-item dropdown  navbar-light">
+                    <a class="nav-link dropdown-toggle  categories" data-toggle="dropdown" href="#" role="button"
+                    aria-haspopup="true" aria-expanded="false"><i class="icofont-ui-folder"></i> CAETEGORIES</a>
                         <div class="dropdown-menu">
                             <a class="dropdown-item" href="#">Action</a>
                             <a class="dropdown-item" href="#">Another action</a>
                             <a class="dropdown-item" href="#">Something else here</a>
                             <a class="dropdown-item" href="#">Separated link</a>
                         </div>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link" href="index.html" role="button"
-                           aria-haspopup="true" aria-expanded="false">HOME</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button"
-                           aria-haspopup="true" aria-expanded="false">FEATURED</a>
-                        <div class="dropdown-menu">
-                            <a class="dropdown-item" href="#">Action</a>
-                            <a class="dropdown-item" href="#">Another action</a>
-                            <a class="dropdown-item" href="#">Something else here</a>
-                            <a class="dropdown-item" href="#">Separated link</a>
-                        </div>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="about.html">ABOUT US</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="contact-us.html">CONTACT US</a>
-                    </li>
-                </ul>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                      </button>
+                
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                    <ul class="nav nav-pills">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link" href="index.html" role="button"
+                               aria-haspopup="true" aria-expanded="false">HOME</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">ABOUT US</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact-us.html">CONTACT US</a>
+                        </li>
+                    </ul>
+                </div>
+               </nav> 
+            
             </div>
         </div>
     </div>
     <!--   menu div ends-->
-</header>
+
+    </header>
 <!-- header ends-->
 
 <!--  slider div starts-->
@@ -994,25 +993,33 @@
             <h2 class="section-heading">ADONS</h2>
         </div>
         <div class="tab-menu">
-            <div class="row">
-                <ul class="nav nav-tabs" id="myTabs" role="tablist">
-                    <li class=" nav-item">
+            <div class="row  tabbable">
+                
+                <ul class="nav nav-tabs mb10 nav-pills nav-justified form-tabs hidden-sm" id="myTabs" role="tablist">
+                    <li class=" nav-item tab-selector">
                         <a class="nav-link active" data-toggle="tab" href="#greetings" role="tab" id="greeting-tabs"
                            aria-controls="greeting" aria-selected="true">Greeting</a>
                     </li>
-                    <li class=" nav-item">
+                    <li class=" nav-item tab-selector">
                         <a class="nav-link" data-toggle="tab" href="#candles" role="tab" id="candle-tabs"
                            aria-controls="candle" aria-selected="false">Candle</a>
                     </li>
-                    <li class=" nav-item">
+                    <li class=" nav-item tab-selector">
                         <a class="nav-link" data-toggle="tab" href="#wines" role="tab" id="wine-tabs"
                            aria-controls="wine" aria-selected="false">Wine</a>
                     </li>
-                    <li class=" nav-item">
+                    <li class=" nav-item tab-selector">
                         <a class="nav-link" data-toggle="tab" href="#gift" role="tab" id="gifts-tabs"
                            aria-controls="gifts" aria-selected="false">Gifts</a>
                     </li>
                 </ul>
+                <select class="mb10 form-control visible-sm" id="tab_selector">
+                    <option value="0">Tab 1</option>
+                    <option value="1">Tab 2</option>
+                    <option value="2">Tab 3</option>
+                    <option value="3">Tab 4</option>
+                    <option value="4">Tab 5</option>
+                </select>
             </div>
         </div>
         <div class="tab-content" id="myTabContents">
@@ -1638,6 +1645,10 @@
                 $('header').removeClass('sticky-nav');
             }
         });
+        
+         $('#tab_selector').on('change', function (e) {
+        $('.form-tabs li a').eq($(this).val()).tab('show');
+    });
 
        $("#img_01").elevateZoom({
            gallery:'gal1', 
