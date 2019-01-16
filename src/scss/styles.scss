@@ -38,6 +38,84 @@ a {
   background-color: $logo-green-color;
 }
 
+.owl-block, .category-block{
+        padding: 10px;
+        border: 1px solid transparent;
+        position: relative;
+
+        .image-block {
+          height: 215px;
+          border: 1px solid #f8f8f8;
+          overflow: hidden;
+
+          img {
+            transition: .2s;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transform: scale(1);
+
+            &:hover {
+              transform: scale(1.5);
+
+            }
+          }
+        }
+
+        h5 {
+          font-family: $font-family-lato;
+          font-size: 15px;
+          color: $grey-color;
+          padding-top: 15px;
+          padding-bottom: 5px;
+        }
+
+        h6 {
+          padding-bottom: 10px;
+          font-family: $font-family-poppins;
+          font-size: 20px;
+          font-weight: 600;
+
+          .old-price {
+            display: none;
+          }
+        }
+
+        .btn-add {
+          font-size: 12px;
+          font-family: $font-family-poppins;
+          font-weight: 600;
+          text-decoration: none;
+          color: $black-color;
+          background-color: $top-menu-color;
+          padding-bottom: 10px;
+          padding-top: 10px;
+          border-radius: 2px;
+          text-align: center;
+        }
+
+        &:hover {
+          border: 1px solid $logo-green-color;
+          color: $red-color;
+
+          h5 {
+            color: $red-color;
+          }
+
+          .old-price {
+            display: contents;
+            font-size: 16px;
+            font-weight: 400;
+            color: $black-color;
+          }
+
+          .btn-add {
+            background-color: $logo-green-color;
+            color: $white-color;
+          }
+        }
+      }
+    
 .owl-dots {
   display: none;
 }
@@ -259,7 +337,7 @@ header {
   position: relative;
   margin-bottom: 50px;
 
-  #trending-slider-div, #featured-slider-div, #cake-slider-div, #similar-slider-div {
+  #trending-slider-div, #featured-slider-div, #cake-slider-div, #similar-slider-div, #category-slider-div {
 
     .owl-nav {
       position: absolute;
@@ -282,86 +360,6 @@ header {
         &:hover {
           background-color: $logo-green-color;
           color: $white-color;
-        }
-      }
-    }
-
-    .owl-item {
-      .owl-block {
-        padding: 10px;
-        border: 1px solid transparent;
-        position: relative;
-
-        .image-block {
-          height: 215px;
-          border: 1px solid #f8f8f8;
-          overflow: hidden;
-
-          img {
-            transition: .2s;
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            transform: scale(1);
-
-            &:hover {
-              transform: scale(1.5);
-
-            }
-          }
-        }
-
-        h5 {
-          font-family: $font-family-lato;
-          font-size: 15px;
-          color: $grey-color;
-          padding-top: 15px;
-          padding-bottom: 5px;
-        }
-
-        h6 {
-          padding-bottom: 10px;
-          font-family: $font-family-poppins;
-          font-size: 20px;
-          font-weight: 600;
-
-          .old-price {
-            display: none;
-          }
-        }
-
-        .btn-add {
-          font-size: 12px;
-          font-family: $font-family-poppins;
-          font-weight: 600;
-          text-decoration: none;
-          color: $black-color;
-          background-color: $top-menu-color;
-          padding-bottom: 10px;
-          padding-top: 10px;
-          border-radius: 2px;
-          text-align: center;
-        }
-
-        &:hover {
-          border: 1px solid $logo-green-color;
-          color: $red-color;
-
-          h5 {
-            color: $red-color;
-          }
-
-          .old-price {
-            display: contents;
-            font-size: 16px;
-            font-weight: 400;
-            color: $black-color;
-          }
-
-          .btn-add {
-            background-color: $logo-green-color;
-            color: $white-color;
-          }
         }
       }
     }
@@ -663,6 +661,14 @@ footer {
 }
 
 // cake-inner page
+
+.section-cake-category{
+    margin-top: $margin;
+    margin-bottom: $margin;
+}
+.section-list{
+    margin-bottom: $margin;
+}
 .cake-inner {
   margin-top: $margin;
   margin-bottom: $margin;

@@ -6943,6 +6943,60 @@ a {
   color: #fff;
   background-color: #298e05; }
 
+.owl-block, .category-block {
+  padding: 10px;
+  border: 1px solid transparent;
+  position: relative; }
+  .owl-block .image-block, .category-block .image-block {
+    height: 215px;
+    border: 1px solid #f8f8f8;
+    overflow: hidden; }
+    .owl-block .image-block img, .category-block .image-block img {
+      transition: .2s;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transform: scale(1); }
+      .owl-block .image-block img:hover, .category-block .image-block img:hover {
+        transform: scale(1.5); }
+  .owl-block h5, .category-block h5 {
+    font-family: "Lato", sans-serif;
+    font-size: 15px;
+    color: #71737a;
+    padding-top: 15px;
+    padding-bottom: 5px; }
+  .owl-block h6, .category-block h6 {
+    padding-bottom: 10px;
+    font-family: "Poppins", sans-serif;
+    font-size: 20px;
+    font-weight: 600; }
+    .owl-block h6 .old-price, .category-block h6 .old-price {
+      display: none; }
+  .owl-block .btn-add, .category-block .btn-add {
+    font-size: 12px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    text-decoration: none;
+    color: #000;
+    background-color: #f4f4f4;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    border-radius: 2px;
+    text-align: center; }
+  .owl-block:hover, .category-block:hover {
+    border: 1px solid #298e05;
+    color: #cd1212; }
+    .owl-block:hover h5, .category-block:hover h5 {
+      color: #cd1212; }
+    .owl-block:hover .old-price, .category-block:hover .old-price {
+      display: contents;
+      font-size: 16px;
+      font-weight: 400;
+      color: #000; }
+    .owl-block:hover .btn-add, .category-block:hover .btn-add {
+      background-color: #298e05;
+      color: #fff; }
+
 .owl-dots {
   display: none; }
 
@@ -7092,73 +7146,20 @@ header .menu-part {
 .section-owl {
   position: relative;
   margin-bottom: 50px; }
-  .section-owl #trending-slider-div .owl-nav, .section-owl #featured-slider-div .owl-nav, .section-owl #cake-slider-div .owl-nav, .section-owl #similar-slider-div .owl-nav {
+  .section-owl #trending-slider-div .owl-nav, .section-owl #featured-slider-div .owl-nav, .section-owl #cake-slider-div .owl-nav, .section-owl #similar-slider-div .owl-nav, .section-owl #category-slider-div .owl-nav {
     position: absolute;
     top: -70px;
     right: 10px;
     background-image: none; }
-    .section-owl #trending-slider-div .owl-nav .owl-prev, .section-owl #trending-slider-div .owl-nav .owl-next, .section-owl #featured-slider-div .owl-nav .owl-prev, .section-owl #featured-slider-div .owl-nav .owl-next, .section-owl #cake-slider-div .owl-nav .owl-prev, .section-owl #cake-slider-div .owl-nav .owl-next, .section-owl #similar-slider-div .owl-nav .owl-prev, .section-owl #similar-slider-div .owl-nav .owl-next {
+    .section-owl #trending-slider-div .owl-nav .owl-prev, .section-owl #trending-slider-div .owl-nav .owl-next, .section-owl #featured-slider-div .owl-nav .owl-prev, .section-owl #featured-slider-div .owl-nav .owl-next, .section-owl #cake-slider-div .owl-nav .owl-prev, .section-owl #cake-slider-div .owl-nav .owl-next, .section-owl #similar-slider-div .owl-nav .owl-prev, .section-owl #similar-slider-div .owl-nav .owl-next, .section-owl #category-slider-div .owl-nav .owl-prev, .section-owl #category-slider-div .owl-nav .owl-next {
       margin-right: 5px;
       font-size: 24px;
       background-color: #f4f4f4;
       color: #000; }
-      .section-owl #trending-slider-div .owl-nav .owl-prev span, .section-owl #trending-slider-div .owl-nav .owl-next span, .section-owl #featured-slider-div .owl-nav .owl-prev span, .section-owl #featured-slider-div .owl-nav .owl-next span, .section-owl #cake-slider-div .owl-nav .owl-prev span, .section-owl #cake-slider-div .owl-nav .owl-next span, .section-owl #similar-slider-div .owl-nav .owl-prev span, .section-owl #similar-slider-div .owl-nav .owl-next span {
+      .section-owl #trending-slider-div .owl-nav .owl-prev span, .section-owl #trending-slider-div .owl-nav .owl-next span, .section-owl #featured-slider-div .owl-nav .owl-prev span, .section-owl #featured-slider-div .owl-nav .owl-next span, .section-owl #cake-slider-div .owl-nav .owl-prev span, .section-owl #cake-slider-div .owl-nav .owl-next span, .section-owl #similar-slider-div .owl-nav .owl-prev span, .section-owl #similar-slider-div .owl-nav .owl-next span, .section-owl #category-slider-div .owl-nav .owl-prev span, .section-owl #category-slider-div .owl-nav .owl-next span {
         padding-left: 10px;
         padding-right: 10px; }
-      .section-owl #trending-slider-div .owl-nav .owl-prev:hover, .section-owl #trending-slider-div .owl-nav .owl-next:hover, .section-owl #featured-slider-div .owl-nav .owl-prev:hover, .section-owl #featured-slider-div .owl-nav .owl-next:hover, .section-owl #cake-slider-div .owl-nav .owl-prev:hover, .section-owl #cake-slider-div .owl-nav .owl-next:hover, .section-owl #similar-slider-div .owl-nav .owl-prev:hover, .section-owl #similar-slider-div .owl-nav .owl-next:hover {
-        background-color: #298e05;
-        color: #fff; }
-  .section-owl #trending-slider-div .owl-item .owl-block, .section-owl #featured-slider-div .owl-item .owl-block, .section-owl #cake-slider-div .owl-item .owl-block, .section-owl #similar-slider-div .owl-item .owl-block {
-    padding: 10px;
-    border: 1px solid transparent;
-    position: relative; }
-    .section-owl #trending-slider-div .owl-item .owl-block .image-block, .section-owl #featured-slider-div .owl-item .owl-block .image-block, .section-owl #cake-slider-div .owl-item .owl-block .image-block, .section-owl #similar-slider-div .owl-item .owl-block .image-block {
-      height: 215px;
-      border: 1px solid #f8f8f8;
-      overflow: hidden; }
-      .section-owl #trending-slider-div .owl-item .owl-block .image-block img, .section-owl #featured-slider-div .owl-item .owl-block .image-block img, .section-owl #cake-slider-div .owl-item .owl-block .image-block img, .section-owl #similar-slider-div .owl-item .owl-block .image-block img {
-        transition: .2s;
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        transform: scale(1); }
-        .section-owl #trending-slider-div .owl-item .owl-block .image-block img:hover, .section-owl #featured-slider-div .owl-item .owl-block .image-block img:hover, .section-owl #cake-slider-div .owl-item .owl-block .image-block img:hover, .section-owl #similar-slider-div .owl-item .owl-block .image-block img:hover {
-          transform: scale(1.5); }
-    .section-owl #trending-slider-div .owl-item .owl-block h5, .section-owl #featured-slider-div .owl-item .owl-block h5, .section-owl #cake-slider-div .owl-item .owl-block h5, .section-owl #similar-slider-div .owl-item .owl-block h5 {
-      font-family: "Lato", sans-serif;
-      font-size: 15px;
-      color: #71737a;
-      padding-top: 15px;
-      padding-bottom: 5px; }
-    .section-owl #trending-slider-div .owl-item .owl-block h6, .section-owl #featured-slider-div .owl-item .owl-block h6, .section-owl #cake-slider-div .owl-item .owl-block h6, .section-owl #similar-slider-div .owl-item .owl-block h6 {
-      padding-bottom: 10px;
-      font-family: "Poppins", sans-serif;
-      font-size: 20px;
-      font-weight: 600; }
-      .section-owl #trending-slider-div .owl-item .owl-block h6 .old-price, .section-owl #featured-slider-div .owl-item .owl-block h6 .old-price, .section-owl #cake-slider-div .owl-item .owl-block h6 .old-price, .section-owl #similar-slider-div .owl-item .owl-block h6 .old-price {
-        display: none; }
-    .section-owl #trending-slider-div .owl-item .owl-block .btn-add, .section-owl #featured-slider-div .owl-item .owl-block .btn-add, .section-owl #cake-slider-div .owl-item .owl-block .btn-add, .section-owl #similar-slider-div .owl-item .owl-block .btn-add {
-      font-size: 12px;
-      font-family: "Poppins", sans-serif;
-      font-weight: 600;
-      text-decoration: none;
-      color: #000;
-      background-color: #f4f4f4;
-      padding-bottom: 10px;
-      padding-top: 10px;
-      border-radius: 2px;
-      text-align: center; }
-    .section-owl #trending-slider-div .owl-item .owl-block:hover, .section-owl #featured-slider-div .owl-item .owl-block:hover, .section-owl #cake-slider-div .owl-item .owl-block:hover, .section-owl #similar-slider-div .owl-item .owl-block:hover {
-      border: 1px solid #298e05;
-      color: #cd1212; }
-      .section-owl #trending-slider-div .owl-item .owl-block:hover h5, .section-owl #featured-slider-div .owl-item .owl-block:hover h5, .section-owl #cake-slider-div .owl-item .owl-block:hover h5, .section-owl #similar-slider-div .owl-item .owl-block:hover h5 {
-        color: #cd1212; }
-      .section-owl #trending-slider-div .owl-item .owl-block:hover .old-price, .section-owl #featured-slider-div .owl-item .owl-block:hover .old-price, .section-owl #cake-slider-div .owl-item .owl-block:hover .old-price, .section-owl #similar-slider-div .owl-item .owl-block:hover .old-price {
-        display: contents;
-        font-size: 16px;
-        font-weight: 400;
-        color: #000; }
-      .section-owl #trending-slider-div .owl-item .owl-block:hover .btn-add, .section-owl #featured-slider-div .owl-item .owl-block:hover .btn-add, .section-owl #cake-slider-div .owl-item .owl-block:hover .btn-add, .section-owl #similar-slider-div .owl-item .owl-block:hover .btn-add {
+      .section-owl #trending-slider-div .owl-nav .owl-prev:hover, .section-owl #trending-slider-div .owl-nav .owl-next:hover, .section-owl #featured-slider-div .owl-nav .owl-prev:hover, .section-owl #featured-slider-div .owl-nav .owl-next:hover, .section-owl #cake-slider-div .owl-nav .owl-prev:hover, .section-owl #cake-slider-div .owl-nav .owl-next:hover, .section-owl #similar-slider-div .owl-nav .owl-prev:hover, .section-owl #similar-slider-div .owl-nav .owl-next:hover, .section-owl #category-slider-div .owl-nav .owl-prev:hover, .section-owl #category-slider-div .owl-nav .owl-next:hover {
         background-color: #298e05;
         color: #fff; }
 
@@ -7349,6 +7350,13 @@ footer {
             font-size: 30px; }
             footer .copyright-part .logo-img ul li a:hover {
               color: #298e05; }
+
+.section-cake-category {
+  margin-top: 80px;
+  margin-bottom: 80px; }
+
+.section-list {
+  margin-bottom: 80px; }
 
 .cake-inner {
   margin-top: 80px;
