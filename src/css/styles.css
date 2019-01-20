@@ -6943,6 +6943,12 @@ a {
   color: #fff;
   background-color: #298e05; }
 
+h6 {
+  padding-bottom: 10px;
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  font-weight: 600; }
+
 .owl-block, .category-block {
   padding: 10px;
   border: 1px solid transparent;
@@ -6965,13 +6971,8 @@ a {
     color: #71737a;
     padding-top: 15px;
     padding-bottom: 5px; }
-  .owl-block h6, .category-block h6 {
-    padding-bottom: 10px;
-    font-family: "Poppins", sans-serif;
-    font-size: 20px;
-    font-weight: 600; }
-    .owl-block h6 .old-price, .category-block h6 .old-price {
-      display: none; }
+  .owl-block .discount-price, .category-block .discount-price {
+    display: none; }
   .owl-block .btn-add, .category-block .btn-add {
     font-size: 12px;
     font-family: "Poppins", sans-serif;
@@ -6979,20 +6980,26 @@ a {
     text-decoration: none;
     color: #000;
     background-color: #f4f4f4;
-    padding-bottom: 10px;
-    padding-top: 10px;
+    padding: 10px 10px 10px 10px;
     border-radius: 2px;
     text-align: center; }
   .owl-block:hover, .category-block:hover {
-    border: 1px solid #298e05;
-    color: #cd1212; }
+    border: 1px solid #298e05; }
+    .owl-block:hover .mark-price, .category-block:hover .mark-price {
+      display: none; }
+    .owl-block:hover .discount-price, .category-block:hover .discount-price {
+      display: block;
+      padding-bottom: 10px;
+      font-family: "Poppins", sans-serif;
+      font-size: 20px;
+      font-weight: 600; }
+      .owl-block:hover .discount-price .old-price, .category-block:hover .discount-price .old-price {
+        display: contents;
+        font-size: 16px;
+        font-weight: 400;
+        color: #000; }
     .owl-block:hover h5, .category-block:hover h5 {
       color: #cd1212; }
-    .owl-block:hover .old-price, .category-block:hover .old-price {
-      display: contents;
-      font-size: 16px;
-      font-weight: 400;
-      color: #000; }
     .owl-block:hover .btn-add, .category-block:hover .btn-add {
       background-color: #298e05;
       color: #fff; }
@@ -7035,15 +7042,14 @@ a {
       font-family: "Lato", sans-serif;
       font-size: 14px; }
 
-@media (min-width: 576px) {
-  header.sticky-nav {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 1120;
-    background: #fff;
-    box-shadow: 0 2px 3px 0 rgba(96, 96, 96, 0.1);
-    transition: all 0.3s; } }
+header.sticky-nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1120;
+  background: #fff;
+  box-shadow: 0 2px 3px 0 rgba(96, 96, 96, 0.1);
+  transition: all 0.3s; }
 
 header .logo-part .navbar {
   padding-top: 20px; }
@@ -7095,7 +7101,8 @@ header .menu-part {
         outline: transparent;
         display: block; }
     header .menu-part .navbar .nav-pills .nav-link {
-      background-color: transparent; }
+      background-color: transparent;
+      text-transform: uppercase; }
       header .menu-part .navbar .nav-pills .nav-link:active {
         background-color: transparent; }
       header .menu-part .navbar .nav-pills .nav-link .disabled {
@@ -7173,38 +7180,49 @@ header .menu-part {
   .section-tab .tab-menu {
     position: absolute;
     right: 140px;
-    margin-bottom: 40px; }
+    padding-top: 10px; }
     .section-tab .tab-menu .nav-tabs {
       border-bottom: transparent; }
-      .section-tab .tab-menu .nav-tabs .nav-item .nav-link {
-        background-color: transparent;
-        border-color: transparent; }
-        .section-tab .tab-menu .nav-tabs .nav-item .nav-link:active {
+      @media (max-width: 575.98px) {
+        .section-tab .tab-menu .nav-tabs {
+          display: none; } }
+      .section-tab .tab-menu .nav-tabs .nav-item {
+        padding-right: 20px;
+        padding-bottom: 10px; }
+        .section-tab .tab-menu .nav-tabs .nav-item a {
+          font-family: "Lato", sans-serif;
+          font-size: 16px;
+          text-decoration: none;
+          color: #000; }
+          .section-tab .tab-menu .nav-tabs .nav-item a:active {
+            color: #cd1212; }
+        .section-tab .tab-menu .nav-tabs .nav-item .nav-link {
+          background-color: transparent;
+          border-color: transparent; }
+          .section-tab .tab-menu .nav-tabs .nav-item .nav-link:active {
+            background-color: transparent;
+            border-color: transparent;
+            color: #cd1212; }
+          .section-tab .tab-menu .nav-tabs .nav-item .nav-link:hover, .section-tab .tab-menu .nav-tabs .nav-item .nav-link:focus {
+            border-color: transparent; }
+        .section-tab .tab-menu .nav-tabs .nav-item .show.active {
           background-color: transparent;
           border-color: transparent;
           color: #cd1212; }
-        .section-tab .tab-menu .nav-tabs .nav-item .nav-link:hover, .section-tab .tab-menu .nav-tabs .nav-item .nav-link:focus {
-          border-color: transparent; }
-      .section-tab .tab-menu .nav-tabs .nav-item .show.active {
-        background-color: transparent;
-        border-color: transparent;
-        color: #cd1212; }
-    .section-tab .tab-menu ul li {
-      padding-right: 20px;
-      padding-bottom: 10px; }
-      .section-tab .tab-menu ul li a {
-        font-family: "Lato", sans-serif;
-        font-size: 16px;
-        text-decoration: none;
-        color: #000; }
-        .section-tab .tab-menu ul li a:active {
-          color: #cd1212; }
+    .section-tab .tab-menu .tab-dropdown {
+      margin-top: 5px;
+      display: none; }
+      @media (max-width: 575.98px) {
+        .section-tab .tab-menu .tab-dropdown {
+          display: block; } }
   .section-tab .tab-content {
     padding-top: 50px; }
     .section-tab .tab-content .tab-pane {
       padding-top: 20px; }
-      .section-tab .tab-content .tab-pane .owl-carousel .owl-block .d-flex {
-        padding-bottom: 20px; }
+      .section-tab .tab-content .tab-pane .owl-carousel .owl-block {
+        border: 0; }
+        .section-tab .tab-content .tab-pane .owl-carousel .owl-block .d-flex {
+          padding-bottom: 20px; }
       .section-tab .tab-content .tab-pane .owl-carousel .owl-nav {
         position: absolute;
         top: -70px;

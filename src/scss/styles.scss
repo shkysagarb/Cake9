@@ -37,6 +37,12 @@ a {
   color: $white-color;
   background-color: $logo-green-color;
 }
+h6{
+	padding-bottom: 10px;
+	font-family: $font-family-poppins;
+	font-size: 20px;
+	font-weight: 600;
+}
 
 .owl-block, .category-block{
         padding: 10px;
@@ -69,18 +75,9 @@ a {
           padding-top: 15px;
           padding-bottom: 5px;
         }
-
-        h6 {
-          padding-bottom: 10px;
-          font-family: $font-family-poppins;
-          font-size: 20px;
-          font-weight: 600;
-
-          .old-price {
-            display: none;
-          }
-        }
-
+		.discount-price{
+			display: none;
+		}
         .btn-add {
           font-size: 12px;
           font-family: $font-family-poppins;
@@ -88,27 +85,32 @@ a {
           text-decoration: none;
           color: $black-color;
           background-color: $top-menu-color;
-          padding-bottom: 10px;
-          padding-top: 10px;
+          padding: 10px 10px 10px 10px;
           border-radius: 2px;
           text-align: center;
         }
 
         &:hover {
           border: 1px solid $logo-green-color;
-          color: $red-color;
-
+		  .mark-price{
+			  display: none;
+		  }
+		  .discount-price{
+			  display: block;
+			  padding-bottom: 10px;
+			  font-family: $font-family-poppins;
+			  font-size: 20px;
+			  font-weight: 600;
+			  .old-price {
+				display: contents;
+				font-size: 16px;
+				font-weight: 400;
+				color: $black-color;
+			  }
+		  }
           h5 {
             color: $red-color;
           }
-
-          .old-price {
-            display: contents;
-            font-size: 16px;
-            font-weight: 400;
-            color: $black-color;
-          }
-
           .btn-add {
             background-color: $logo-green-color;
             color: $white-color;
@@ -172,7 +174,6 @@ a {
 
 header {
   &.sticky-nav {
-    @include media-breakpoint-up(sm) {
       position: fixed;
       top: 0;
       width: 100%;
@@ -180,7 +181,6 @@ header {
       background: $white-color;
       box-shadow: 0 2px 3px 0 rgba(96, 96, 96, 0.1);
       transition: all 0.3s;
-    }
   }
 
   .logo-part {
@@ -254,11 +254,11 @@ header {
                 outline: transparent;
                 display: block;
               }
-          }
-           
+          }      
     .nav-pills {  
       .nav-link {
         background-color: transparent;
+        text-transform: uppercase;
 
         &:active {
           background-color: transparent;
@@ -378,12 +378,28 @@ header {
   .tab-menu {
     position: absolute;
     right: 140px;
-    margin-bottom: 40px;
+    padding-top: 10px;
 
     .nav-tabs {
       border-bottom: transparent;
-
+		
+	  @include media-breakpoint-down(xs) {
+		  display: none;
+		  
+	  }
       .nav-item {
+		    padding-right: 20px;
+			padding-bottom: 10px;
+			a {
+			  font-family: $font-family-lato;
+			  font-size: 16px;
+			  text-decoration: none;
+			  color: $black-color;
+
+			  &:active {
+				color: $red-color;
+			  }
+			}
         .nav-link {
           background-color: transparent;
           border-color: transparent;
@@ -399,7 +415,6 @@ header {
           }
 
         }
-
         .show.active {
           background-color: transparent;
           border-color: transparent;
@@ -407,24 +422,15 @@ header {
         }
       }
     }
-
-    ul {
-      li {
-        padding-right: 20px;
-        padding-bottom: 10px;
-
-        a {
-          font-family: $font-family-lato;
-          font-size: 16px;
-          text-decoration: none;
-          color: $black-color;
-
-          &:active {
-            color: $red-color;
-          }
-        }
-      }
-    }
+	.tab-dropdown{
+		  margin-top: 5px;
+		  @include media-breakpoint-up(xs) {
+		  	display: none;
+	  	  }
+		  @include media-breakpoint-down(xs) {
+		  	display: block;
+	  	  }
+	  }
   }
 
   .tab-content {
@@ -435,6 +441,7 @@ header {
 
       .owl-carousel {
         .owl-block {
+			border: 0;
           .d-flex {
             padding-bottom: 20px;
           }
