@@ -117,7 +117,6 @@
         <div class="row">
             <div class="col-lg-4 col-sm-12">
                 <div class="photos">
-                    <!-- Main Image -->
                     <img id="img_01" src="images/cake-img1.jpg" data-zoom-image="images/cake-img1.jpg" width="470px"/>
                     <div id="album">
                         <a href="#" data-image="images/cake-img1.jpg" data-zoom-image="images/cake-img1.jpg">
@@ -290,7 +289,7 @@
 <!-- similar product div ends-->
     
 <!-- section for inner page of cake item ends -->
-
+   
 <!-- footer section    -->
 <footer>
     <div class="container-fluid">
@@ -385,19 +384,26 @@
                 $('header').removeClass('sticky-nav');
             }
         });
+        
+		//for tab dropdown 
+        $('#tab_selector1').on('change', function (e){
+        	$('.form-tab li a').eq($(this).val()).tab('show');
+    	});
+		$('#tab_selector2').on('change', function (e){
+        	$('.form-tabs li a').eq($(this).val()).tab('show');
+    	});
 
-        $("#img_01").elevateZoom({
-            gallery: 'album',
-            cursor: 'pointer',
-            galleryActiveClass: 'active',
-            imageCrossfade: true,
-            // loadingIcon: 'http://www.elevateweb.co.uk/spinner.gif'
-        });
-
-        $("#img_01").bind("click", function (e) {
-            var ez = $('#img_01').data('elevateZoom');
-            $.fancybox(ez.getGalleryList());
-            return false;
+       $("#img_01").elevateZoom({
+           gallery:'album', 
+           cursor: 'pointer', 
+           galleryActiveClass: 'active', 
+           imageCrossfade: true, 
+           loadingIcon:'http://www.elevateweb.co.uk/spinner.gif'});
+        
+        $("#img_01").bind("click", function(e) {  
+          var ez =   $('#img_01').data('elevateZoom');
+          $.fancybox(ez.getGalleryList());
+          return false;
         });
         $('#similar-slider-div').owlCarousel({
             items: 6,

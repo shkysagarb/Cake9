@@ -356,6 +356,7 @@
 </section>
 <!--section categories ends-->
     
+   
 <!-- footer section    -->
 <footer>
     <div class="container-fluid">
@@ -451,12 +452,16 @@
             }
         });
         
-         $('#tab_selector').on('change', function (e) {
-        $('.form-tabs li a').eq($(this).val()).tab('show');
-    });
+		//for tab dropdown 
+        $('#tab_selector1').on('change', function (e){
+        	$('.form-tab li a').eq($(this).val()).tab('show');
+    	});
+		$('#tab_selector2').on('change', function (e){
+        	$('.form-tabs li a').eq($(this).val()).tab('show');
+    	});
 
        $("#img_01").elevateZoom({
-           gallery:'gal1', 
+           gallery:'album', 
            cursor: 'pointer', 
            galleryActiveClass: 'active', 
            imageCrossfade: true, 
@@ -467,6 +472,7 @@
           $.fancybox(ez.getGalleryList());
           return false;
         });
+		
         $('#similar-slider-div').owlCarousel({
             items: 6,
             loop: false,
@@ -492,30 +498,6 @@
                     nav: true,
                     mouseDrag: false,
 //                  loop: false
-                }
-            }
-        });
-        $('#category-slider-div').owlCarousel({
-            loop: true,
-            responsiveClass: true,
-            responsive: {
-                0: {
-                    items: 1,
-                    nav: true
-                },
-                600: {
-                    items: 2,
-                    nav: false
-                },
-                1000: {
-                    items: 5,
-                    nav: true,
-                    loop: false
-                },
-                1200: {
-                    items: 6,
-                    nav: true,
-                    loop: false
                 }
             }
         });

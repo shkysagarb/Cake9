@@ -201,6 +201,8 @@
 <!-- contact page ends -->
        
 <!--section contact us page ends -->
+	
+   
 <!-- footer section    -->
 <footer>
     <div class="container-fluid">
@@ -295,9 +297,17 @@
                 $('header').removeClass('sticky-nav');
             }
         });
+        
+		//for tab dropdown 
+        $('#tab_selector1').on('change', function (e){
+        	$('.form-tab li a').eq($(this).val()).tab('show');
+    	});
+		$('#tab_selector2').on('change', function (e){
+        	$('.form-tabs li a').eq($(this).val()).tab('show');
+    	});
 
        $("#img_01").elevateZoom({
-           gallery:'gal1', 
+           gallery:'album', 
            cursor: 'pointer', 
            galleryActiveClass: 'active', 
            imageCrossfade: true, 
