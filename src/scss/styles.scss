@@ -37,6 +37,7 @@ a {
   color: $white-color;
   background-color: $logo-green-color;
 }
+
 h6{
 	padding-bottom: 10px;
 	font-family: $font-family-poppins;
@@ -232,7 +233,7 @@ header {
   }
 
   .menu-part {
-    background-color: $black-color;
+    background-color: #343a40;
       .navbar{
           padding:0;
             .categories{
@@ -287,6 +288,7 @@ header {
 }
 
 .slide {
+  padding-top: 1px;
   margin-bottom: 50px;
   @include media-breakpoint-down(xs) {
     margin-bottom: 20px;
@@ -384,8 +386,7 @@ header {
       border-bottom: transparent;
 		
 	  @include media-breakpoint-down(xs) {
-		  display: none;
-		  
+		  display: none;  
 	  }
       .nav-item {
 		    padding-right: 20px;
@@ -395,27 +396,19 @@ header {
 			  font-size: 16px;
 			  text-decoration: none;
 			  color: $black-color;
-
-			  &:active {
+			  &.active {
 				color: $red-color;
 			  }
 			}
+		 
         .nav-link {
           background-color: transparent;
           border-color: transparent;
-
-          &:active {
-            background-color: transparent;
-            border-color: transparent;
-            color: $red-color;
-          }
-
           &:hover, &:focus {
             border-color: transparent;
           }
-
         }
-        .show.active {
+        .show .active {
           background-color: transparent;
           border-color: transparent;
           color: $red-color;
@@ -579,6 +572,31 @@ header {
   }
 }
 
+.section-news-coverage{
+	margin-bottom: $margin;
+	.news-list{
+		.news-block{
+			margin-bottom: 20px;
+			padding: 20px;
+			box-shadow: 0 0 4px $top-menu-color;
+			&:hover{
+				box-shadow: 0 0 25px #e2e2e2;
+			}
+			.image-part{
+				height: 250px;
+				.news-image{
+					width: 100%;
+					height: 100%;
+					object-fit: cover;
+				}
+			}
+			.news-caption{
+				padding-top: 10px;	
+			}
+		}
+	}
+}
+
 footer {
   color: $grey-color;
 
@@ -679,25 +697,24 @@ footer {
 }
 
 .cake-inner {
-  margin-top: $margin;
-  margin-bottom: $margin;
-
+  padding-top: $margin;
+  padding-bottom: $margin;
+  background-color: $top-menu-color;
   .cake-info {
-    border: 1px solid $grey-color;
     padding: 10px;
     margin-bottom: 20px;
-
+	background-color: white;
     .cake-head {
       font-size: 30px;
       margin-bottom: 0;
     }
 
-    .vendor {
-      font-size: 12px;
-      color: $logo-green-color;
-      border-bottom: 1px solid $grey-color;
-
-    }
+//    .vendor {
+//      font-size: 12px;
+//      color: $logo-green-color;
+//      border-bottom: 1px solid $grey-color;
+//
+//    }
 
     .price {
       padding-top: 20px;
@@ -738,9 +755,8 @@ footer {
   }
 
   .ajax-text {
-    border: 1px solid $grey-color;
+    background-color: white;
     padding: 10px;
-
     .scroll-text {
       position: relative;
       overflow-y: scroll;
@@ -786,10 +802,6 @@ footer {
 
 }
 
-.zoomContainer {
-  width: auto !important;
-}
-
 #similar-slider-div {
   @include media-breakpoint-up(md) {
     .owl-nav {
@@ -798,6 +810,33 @@ footer {
   }
 
 }
+
+.similar-product{
+	margin-top: 30px;
+}
+
+.section-you-like{
+	margin-top: 30px;
+	margin-bottom: $margin;
+}
+
+.section-seen{
+	.media-list{
+		.media-list-block{
+			padding: 10px;
+			.media-image{
+				display: inline-block;
+				max-height: 100px;
+				max-width: 120px;
+			}
+		}
+	}
+}
+
+.zoomContainer {
+  width: auto !important;
+}
+
 
 //about us page
 .section-aboutus {
