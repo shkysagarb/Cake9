@@ -7154,20 +7154,20 @@ header .menu-part {
 .section-owl {
   position: relative;
   margin-bottom: 50px; }
-  .section-owl #trending-slider-div .owl-nav, .section-owl #featured-slider-div .owl-nav, .section-owl #cake-slider-div .owl-nav, .section-owl #similar-slider-div .owl-nav, .section-owl #category-slider-div .owl-nav {
+  .section-owl #trending-slider-div .owl-nav, .section-owl #featured-slider-div .owl-nav, .section-owl #cake-slider-div .owl-nav, .section-owl #similar-slider-div .owl-nav, .section-owl #category-slider-div .owl-nav, .section-owl #media-slider-div .owl-nav {
     position: absolute;
     top: -70px;
     right: 10px;
     background-image: none; }
-    .section-owl #trending-slider-div .owl-nav .owl-prev, .section-owl #trending-slider-div .owl-nav .owl-next, .section-owl #featured-slider-div .owl-nav .owl-prev, .section-owl #featured-slider-div .owl-nav .owl-next, .section-owl #cake-slider-div .owl-nav .owl-prev, .section-owl #cake-slider-div .owl-nav .owl-next, .section-owl #similar-slider-div .owl-nav .owl-prev, .section-owl #similar-slider-div .owl-nav .owl-next, .section-owl #category-slider-div .owl-nav .owl-prev, .section-owl #category-slider-div .owl-nav .owl-next {
+    .section-owl #trending-slider-div .owl-nav .owl-prev, .section-owl #trending-slider-div .owl-nav .owl-next, .section-owl #featured-slider-div .owl-nav .owl-prev, .section-owl #featured-slider-div .owl-nav .owl-next, .section-owl #cake-slider-div .owl-nav .owl-prev, .section-owl #cake-slider-div .owl-nav .owl-next, .section-owl #similar-slider-div .owl-nav .owl-prev, .section-owl #similar-slider-div .owl-nav .owl-next, .section-owl #category-slider-div .owl-nav .owl-prev, .section-owl #category-slider-div .owl-nav .owl-next, .section-owl #media-slider-div .owl-nav .owl-prev, .section-owl #media-slider-div .owl-nav .owl-next {
       margin-right: 5px;
       font-size: 24px;
       background-color: #f4f4f4;
       color: #000; }
-      .section-owl #trending-slider-div .owl-nav .owl-prev span, .section-owl #trending-slider-div .owl-nav .owl-next span, .section-owl #featured-slider-div .owl-nav .owl-prev span, .section-owl #featured-slider-div .owl-nav .owl-next span, .section-owl #cake-slider-div .owl-nav .owl-prev span, .section-owl #cake-slider-div .owl-nav .owl-next span, .section-owl #similar-slider-div .owl-nav .owl-prev span, .section-owl #similar-slider-div .owl-nav .owl-next span, .section-owl #category-slider-div .owl-nav .owl-prev span, .section-owl #category-slider-div .owl-nav .owl-next span {
+      .section-owl #trending-slider-div .owl-nav .owl-prev span, .section-owl #trending-slider-div .owl-nav .owl-next span, .section-owl #featured-slider-div .owl-nav .owl-prev span, .section-owl #featured-slider-div .owl-nav .owl-next span, .section-owl #cake-slider-div .owl-nav .owl-prev span, .section-owl #cake-slider-div .owl-nav .owl-next span, .section-owl #similar-slider-div .owl-nav .owl-prev span, .section-owl #similar-slider-div .owl-nav .owl-next span, .section-owl #category-slider-div .owl-nav .owl-prev span, .section-owl #category-slider-div .owl-nav .owl-next span, .section-owl #media-slider-div .owl-nav .owl-prev span, .section-owl #media-slider-div .owl-nav .owl-next span {
         padding-left: 10px;
         padding-right: 10px; }
-      .section-owl #trending-slider-div .owl-nav .owl-prev:hover, .section-owl #trending-slider-div .owl-nav .owl-next:hover, .section-owl #featured-slider-div .owl-nav .owl-prev:hover, .section-owl #featured-slider-div .owl-nav .owl-next:hover, .section-owl #cake-slider-div .owl-nav .owl-prev:hover, .section-owl #cake-slider-div .owl-nav .owl-next:hover, .section-owl #similar-slider-div .owl-nav .owl-prev:hover, .section-owl #similar-slider-div .owl-nav .owl-next:hover, .section-owl #category-slider-div .owl-nav .owl-prev:hover, .section-owl #category-slider-div .owl-nav .owl-next:hover {
+      .section-owl #trending-slider-div .owl-nav .owl-prev:hover, .section-owl #trending-slider-div .owl-nav .owl-next:hover, .section-owl #featured-slider-div .owl-nav .owl-prev:hover, .section-owl #featured-slider-div .owl-nav .owl-next:hover, .section-owl #cake-slider-div .owl-nav .owl-prev:hover, .section-owl #cake-slider-div .owl-nav .owl-next:hover, .section-owl #similar-slider-div .owl-nav .owl-prev:hover, .section-owl #similar-slider-div .owl-nav .owl-next:hover, .section-owl #category-slider-div .owl-nav .owl-prev:hover, .section-owl #category-slider-div .owl-nav .owl-next:hover, .section-owl #media-slider-div .owl-nav .owl-prev:hover, .section-owl #media-slider-div .owl-nav .owl-next:hover {
         background-color: #298e05;
         color: #fff; }
 
@@ -7304,6 +7304,16 @@ header .menu-part {
         background-color: #298e05;
         color: #fff; }
 
+.section-you-like {
+  margin-top: 30px;
+  margin-bottom: 80px; }
+
+.section-seen .media-list .media-block {
+  padding: 10px;
+  height: 150px; }
+  .section-seen .media-list .media-block img {
+    height: 100%; }
+
 .section-news-coverage {
   margin-bottom: 80px; }
   .section-news-coverage .news-list .news-block {
@@ -7320,6 +7330,16 @@ header .menu-part {
         object-fit: cover; }
     .section-news-coverage .news-list .news-block .news-caption {
       padding-top: 10px; }
+  .section-news-coverage .view-news {
+    background-color: #f4f4f4;
+    padding: 10px;
+    border-radius: 2px; }
+    .section-news-coverage .view-news:hover {
+      color: white;
+      background-color: #298e05; }
+
+.news-detail {
+  margin-top: 80px; }
 
 footer {
   color: #71737a; }
@@ -7460,17 +7480,6 @@ footer {
 
 .similar-product {
   margin-top: 30px; }
-
-.section-you-like {
-  margin-top: 30px;
-  margin-bottom: 80px; }
-
-.section-seen .media-list .media-list-block {
-  padding: 10px; }
-  .section-seen .media-list .media-list-block .media-image {
-    display: inline-block;
-    max-height: 100px;
-    max-width: 120px; }
 
 .zoomContainer {
   width: auto !important; }

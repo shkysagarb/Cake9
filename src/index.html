@@ -249,7 +249,7 @@
     <div class="container-fluid">
         <div class="row">
             <div class="owl-carousel owl-theme " id="featured-slider-div">
-                 <div class="owl-block">
+                <div class="owl-block">
                     <a href="cake-inner.html">
                         <div class="image-block">
                             <img src="images/cake-img1.jpg" alt=""/>
@@ -1624,12 +1624,13 @@
 				</div>
 			</div>
 		</div>
+		<a href="news-detail.html" class="view-news">View More</a>
 	</div>
 </section>
 <!--section news coverage ends -->
 
 <!--section as seen on starts-->
-<section class="section-seen">
+<section class="section-owl section-seen">
 	<div class="container-fluid">
         <div class="section-head">
             <div class="row">
@@ -1638,80 +1639,58 @@
                 </div>
             </div>
         </div>
-		<div class="media-list">
-			<div class="row">
-				<ul class="media-list-block">
-					<li class="media-image">
-						<a href="#">
-							<img src="images/media-img1.jpg" alt="" class="img-thumbnail">
-						</a>
-					</li>
-					<li class="media-image">
-						<a href="#">
-							<img src="images/media-img2.jpg" alt="" class="img-thumbnail">
-						</a>
-					</li>
-					<li class="media-image">
-						<a href="#">
-							<img src="images/media-img3.jpg" alt="" class="img-thumbnail">
-						</a>
-					</li>
-					<li class="media-image">
-						<a href="#">
-							<img src="images/media-img1.jpg" alt="" class="img-thumbnail">
-						</a>
-					</li>
-					<li class="media-image">
-						<a href="#">
-							<img src="images/media-img3.jpg" alt="" class="img-thumbnail">
-						</a>
-					</li>
-					<li class="media-image">
-						<a href="#">
-							<img src="images/media-img2.jpg" alt="" class="img-thumbnail">
-						</a>
-					</li>
-					<li class="media-image">
-						<a href="#">
-							<img src="images/media-img1.jpg" alt="" class="img-thumbnail">
-						</a>
-					</li>
-					<li class="media-image">
-						<a href="#">
-							<img src="images/media-img2.jpg" alt="" class="img-thumbnail">
-						</a>
-					</li>
-					<li class="media-image">
-						<a href="#">
-							<img src="images/media-img3.jpg" alt="" class="img-thumbnail">
-						</a>
-					</li>
-					<li class="media-image">
-						<a href="#">
-							<img src="images/media-img1.jpg" alt="" class="img-thumbnail">
-						</a>
-					</li>
-					<li class="media-image">
-						<a href="#">
-							<img src="images/media-img3.jpg" alt="" class="img-thumbnail">
-						</a>
-					</li>
-					<li class="media-image">
-						<a href="#">
-							<img src="images/media-img2.jpg" alt="" class="img-thumbnail">
-						</a>
-					</li>
-					<li class="media-image">
-						<a href="#">
-							<img src="images/media-img1.jpg" alt="" class="img-thumbnail">
-						</a>
-					</li>
-				</ul>
+		<div class="row">
+			<div class="owl-carousel owl-theme media-list" id="media-slider-div">
+				<div class="media-block">
+					<a href="#">
+						<img src="images/media-img1.jpg" alt="" class="img-thumbnail">
+					</a>
+				</div>
+				<div class="media-block">
+					<a href="#">
+						<img src="images/media-img2.jpg" alt="" class="img-thumbnail">
+					</a>
+				</div>
+				<div class="media-block">
+					<a href="#">
+						<img src="images/media-img3.jpg" alt="" class="img-thumbnail">
+					</a>
+				</div>
+				<div class="media-block">
+					<a href="#">
+						<img src="images/media-img1.jpg" alt="" class="img-thumbnail">
+					</a>
+				</div>
+				<div class="media-block">
+					<a href="#">
+						<img src="images/media-img2.jpg" alt="" class="img-thumbnail">
+					</a>
+				</div>
+				<div class="media-block">
+					<a href="#">
+						<img src="images/media-img3.jpg" alt="" class="img-thumbnail">
+					</a>
+				</div>
+				<div class="media-block">
+					<a href="#">
+						<img src="images/media-img1.jpg" alt="" class="img-thumbnail">
+					</a>
+				</div>
+				<div class="media-block">
+					<a href="#">
+						<img src="images/media-img3.jpg" alt="" class="img-thumbnail">
+					</a>
+				</div>
+				<div class="media-block">
+					<a href="#">
+						<img src="images/media-img1.jpg" alt="" class="img-thumbnail">
+					</a>
+				</div>
 			</div>
 		</div>
 	</div>
 </section>
-<!--section as seen on starts-->
+<!--section as seen on ends-->
 	
 <!--  newsletter section   -->
 <section class="section-newsletter bg-dark">
@@ -2152,6 +2131,34 @@
                     loop: false
                 }
             }
+        });
+	   $('#media-slider-div').owlCarousel({
+			items: 6,
+			loop: false,
+			lazyLoader: true,
+			responsiveClass: true,
+			responsive: {
+				0: {
+					items: 1,
+					nav: true
+				},
+				600: {
+					items: 2,
+					nav: false
+				},
+				1000: {
+					items: 5,
+					nav: true,
+					loop: false,
+					mouseDrag: false,
+				},
+				1200: {
+					items: 6,
+					nav: true,
+					mouseDrag: false,
+	//                  loop: false
+				}
+			}
         });
     });
 </script>
