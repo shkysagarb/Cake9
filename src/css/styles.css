@@ -7065,11 +7065,12 @@ header .logo-part .navbar {
           color: #298e05; }
 
 header .cart-item {
-  padding-top: 20px; }
+  padding-top: 20px;
+  display: block; }
   @media (max-width: 767.98px) {
     header .cart-item {
       padding-bottom: 10px; } }
-  header .cart-item a {
+  header .cart-item .cart-link {
     display: inline-block;
     border: 2px solid #f4f4f4;
     border-radius: 50%;
@@ -7079,7 +7080,18 @@ header .cart-item {
     text-align: center; }
   header .cart-item .cart-list {
     font-size: 28px;
-    margin: 10px; }
+    margin: 10px;
+    position: relative; }
+    header .cart-item .cart-list .cart-number {
+      position: absolute;
+      top: -20px;
+      left: -10px;
+      font-size: 18px;
+      background-color: red;
+      color: white;
+      border-radius: 50%;
+      width: 20px;
+      height: 20px; }
 
 header .menu-part {
   background-color: #343a40; }
